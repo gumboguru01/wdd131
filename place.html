@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore MIAMI</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Explore MIAMI</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 480px)">
+                <img src="images/hero-small.webp" alt="Scenic view of [Your Place]">
+            </picture>
+        </section>
+
+        <section class="info">
+            <h2>About MIAMI FLORIDA</h2>
+            <p>Miami, located in southeastern Florida, is one of the most vibrant and diverse cities in the United
+                States. Known for its beautiful beaches, sunny weather, and lively culture, Miami attracts millions of
+                visitors each year. The city serves as a gateway to Latin America, offering a rich blend of cultures,
+                especially Cuban, which has greatly influenced its food, music, and arts scene. Miami is also known for
+                its modern skyline, luxurious shopping, and exciting nightlife.</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather ⛅</h2>
+            <p>Temperature: <span id="temp">10</span>°C</p>
+            <p>Wind Speed: <span id="windSpeed">5</span> km/h</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
