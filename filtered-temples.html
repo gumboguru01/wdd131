@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-btn">☰</button>
+        <nav id="nav-menu">
+            <a href="#" data-filter="all">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Beautiful Temples</h2>
+        <section class="gallery" id="temple-gallery">
+            <!-- Temple data will be loaded dynamically -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last updated: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
