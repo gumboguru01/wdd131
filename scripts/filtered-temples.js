@@ -94,5 +94,6 @@ const temples = [
         area: 17000,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/redlands-california/redlands-california-temple-lds-1024x768.jpg",
+
     },
 ];
