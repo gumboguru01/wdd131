@@ -1,14 +1,20 @@
 #menu {
     display: none;
+    /* Menu hidden on large screens */
 }
 
 .navigation {
-    display: flex !important;
+    display: flex;
+    /* Avoid using !important */
     flex-direction: row;
     gap: 1rem;
     margin-top: 0;
+    background-color: #4B0082;
+    /* Ensure good contrast */
 }
 
 .gallery {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
