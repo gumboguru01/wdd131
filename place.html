@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Zimbabwe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Discover Zimbabwe</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Beautiful view of Zimbabwe landscape" width="1500"
+                    height="750" />
+            </picture>
+        </div>
+
+        <section class="info">
+            <h2>Weather <span class="weather-icon" aria-hidden="true"></span></h2>
+            <p>Temperature: <span id="temp">23</span>°C</p>
+            <p>Wind Speed: <span id="wind">15</span> km/h</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <img src="images/weather.svg" class="mobile-weather-icon" alt="Partly cloudy weather icon" />
+        </section>
+
+        <section class="about">
+            <h2>About Zimbabwe</h2>
+            <p>Zimbabwe is a landlocked country in southern Africa known for its dramatic landscape and diverse
+                wildlife. From the famous Victoria Falls to the stone ruins of Great Zimbabwe, it's a country rich in
+                history and natural beauty.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
