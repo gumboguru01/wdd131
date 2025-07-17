@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temple Album page for WDD131 by Nyashadzashe Gumboguru" />
+    <title>Temple Album</title>
+
+    <!-- ✅ Use updated CSS and JS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button id="menu" aria-label="Menu">&#9776;</button>
+            <nav class="navigation">
+                <!-- ✅ Add data-filter for each nav item -->
+                <a href="#" data-filter="all">Home</a>
+                <a href="#" data-filter="old">Old</a>
+                <a href="#" data-filter="new">New</a>
+                <a href="#" data-filter="large">Large</a>
+                <a href="#" data-filter="small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="pageTitle">All Temples</h2>
+        <!-- ✅ Empty container to be filled with JS-generated cards -->
+        <section class="gallery" id="temples-container">
+            <h3>Temple Gallery</h3>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🤖 Nyashadzashe Gumboguru 🌍 Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/* Large screen styles (768px and up) */
+
+@media screen and (min-width: 768px) {
+
+    /* Hide mobile menu icon */
+    #menu {
+        display: none;
+    }
+
+    /* Show nav items horizontally */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+        background-color: #4B0082;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Responsive temple grid layout */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .temple-card {
+        max-width: 100%;
+    }
+
+}
