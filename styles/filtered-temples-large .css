@@ -1,16 +1,9 @@
 /* Large screen styles (768px and up) */
-
 @media screen and (min-width: 768px) {
 
     /* Hide mobile menu icon */
     #menu {
         display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-        .gallery {
-            grid-template-columns: repeat(4, 1fr);
-        }
     }
 
     /* Show nav items horizontally */
@@ -36,5 +29,11 @@
     .temple-card {
         max-width: 100%;
     }
+}
 
+/* XL screen styles (1200px and up) */
+@media screen and (min-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
