@@ -109,3 +109,8 @@ displayTemples(temples);
 // ✅ Footer year and last modified
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+
+// Menu toggle (for mobile dropdown)
+document.getElementById('menu').addEventListener('click', function () {
+  document.querySelector('.navigation').classList.toggle('open');
+});
