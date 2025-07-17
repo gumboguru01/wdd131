@@ -5,7 +5,6 @@ body {
     padding: 0;
     color: #222;
     background-color: #f9f9f9;
-    /* Added background for contrast */
 }
 
 /* Header styles */
@@ -37,7 +36,6 @@ header {
     gap: 10px;
     margin-top: 1rem;
     background-color: #4B0082;
-    /* Ensures good contrast */
 }
 
 .navigation.open {
@@ -48,10 +46,11 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 0.3rem 0;
+    background-color: transparent;
 }
 
 nav a:hover {
-    background: white;
+    background-color: white;
     color: #4B0082;
     padding: 0.3rem;
     border-radius: 5px;
@@ -81,6 +80,7 @@ img {
     width: 100%;
     height: auto;
     display: block;
+    border: none;
 }
 
 /* Footer styles */
@@ -93,6 +93,7 @@ footer {
 
 .temple-card {
     background-color: white;
+    color: #222;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -104,6 +105,7 @@ footer {
     margin-top: 0.5rem;
 }
 
+/* Responsive Layouts */
 @media (min-width: 768px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -116,8 +118,9 @@ footer {
     }
 }
 
+/* Hover effect */
 .temple-card:hover {
     transform: translateY(-5px);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
