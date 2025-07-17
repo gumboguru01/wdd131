@@ -1,4 +1,4 @@
-// ✅ Temple data array (Add at least 3 custom temples too)
+// ✅ Temple data array 
 const temples = [
   {
     templeName: "Salt Lake Temple",
