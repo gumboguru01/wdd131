@@ -1,0 +1,9 @@
+<p>Thank you for your review!</p>
+<p>You have submitted <span id="reviewCount"></span> reviews.</p>
+
+<script>
+  let count = localStorage.getItem('reviewCount');
+  count = count ? parseInt(count) + 1 : 1;
+  localStorage.setItem('reviewCount', count);
+  document.getElementById('reviewCount').textContent = count;
+</script>

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #fdf9fc, #f0e1f4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: #400032;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+label,
+legend {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #400032;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #a9007e;
+    outline: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #a9007e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #750055;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.optional {
+    color: #6666ff;
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+footer p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 0;
+}
